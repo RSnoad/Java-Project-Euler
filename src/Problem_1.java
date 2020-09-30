@@ -1,3 +1,4 @@
+// Find sum of all multiples of 3 & 5 below 1000
 public class Problem_1 {
     public static void main(String[] args) {
 
@@ -10,3 +11,4 @@ public class Problem_1 {
         System.out.println(total);
     }
 }
+// This is a github test
