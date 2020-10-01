@@ -6,19 +6,21 @@ import java.util.List;
 public class Problem_4 {
     public static void main(String[] args) {
 
+// Create list that stores integers.0
         List<Integer> palindromeList = new ArrayList<>();
 
+// Nested loop to brute force multiplications.
         for (int i = 100; i <= 1000; i++) {
             for (int j = 100; j <= 1000; j++) {
                 int k = i * j;
 
-
-                if (palindrome(k) == true) {
+// Use palindrome function to add palindromic numbers to palindromeList.
+                if (palindrome(k)) {
                     palindromeList.add(k);
                 }
             }
         }
-
+// Print the max value of palindromeList.
         System.out.println(Collections.max(palindromeList));
 
     }
